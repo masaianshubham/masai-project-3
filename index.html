@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(https://media.istockphoto.com/photos/too-many-questions-picture-id487063216);
+        }
+        /* #cbody {
+            background-image: url(https://media.istockphoto.com/photos/too-many-questions-picture-id487063216);
+        } */
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-8 offset-2">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h1>Masai Mind</h1>
+                    </div>
+                    <div class="card-body bg-light" id="cbody">
+                        <form>
+                            <div class="form-group">
+                                <label for="questions">Number of Questions</label>
+                                <input type="number" class="form-control" id="questions" min="1" max="50">
+                              </div>
+                              <div class="form-group">
+                                <label for="category">Select Category</label>
+                                <select name="" id="category" class="form-control"> 
+                                    <option value="">Any category</option>
+                                    <option value="9">General Knowledge</option>
+                                    <option value="10">Entertainment: Books</option>
+                                    <option value="11">Entertainment: Film</option>
+                                    <option value="12">Entertainment: Music</option>
+                                    <option value="13">Entertainment: Musicals & Theaters</option>
+                                    <option value="14">Entertainment: Television</option>
+                                    <option value="15">Entertainment: Video Games</option>
+                                    <option value="16">Entertainment: Board Games</option>
+                                    <option value="17">Science & Nature</option>
+                                    <option value="18">Science: Computers</option>
+                                    <option value="19">Science: Mathematics</option>
+                                    <option value="20">Mythology</option>
+                                    <option value="21">Sports</option>
+                                    <option value="22">Geography</option>
+                                    <option value="23">History</option>
+                                    <option value="24">Politics</option>
+                                    <option value="25">Art</option>
+                                    <option value="26">Celebrities</option>
+                                    <option value="27">Animals</option>
+                                    <option value="28">Vehicles</option>
+                                    <option value="29">Entertainment: Comics</option>
+                                    <option value="30">Science: Gadgets</option>
+                                    <option value="31">Entertainment: Japanese Anime & Manga</option>
+                                    <option value="32">Entertainment: Cartoon & Animations</option>
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                    <label  for="Difficulty">Select Difficulty</label>
+                                    <select class="form-control" name="" id="difficulty">
+                                        <option value="">Any Difficulty</option>
+                                        <option value="easy">Easy</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="hard">Hard</option>
+                                    </select>
+
+                              </div>
+                              <div class="form-group">
+                                <label  for="type">Select Type</label>
+                                <select class="form-control" name="" id="difficulty">
+                                    <option value="">All type</option>
+                                    <option value="medium">Multiple Choice</option>
+                                    <option value="boolean">True/False</option>
+                                </select>
+
+                                <input type="submit" name="" id="" value="Start Quiz" class="form-control btn btn-primary my-4">
+                          </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
