@@ -43,7 +43,7 @@ function appendCard(data,user1){
         cardBody.setAttribute("class", "card-body")
         cardBody.setAttribute("id", i)
         var que = document.createElement("h3")
-        que.innerText = "Que." + (i+1) + ". " + data[i].question
+        que.innerHTML = "Que." + (i+1) + ". " + data[i].question
 
         var op1 = document.createElement("button")
         op1.innerText = data[i].correct_answer
