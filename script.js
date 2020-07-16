@@ -11,20 +11,22 @@ function getData(){
     var category = form.get('category')
     var difficulty = form.get('difficulty')
     var type = form.get('type')
+    var user = form.get('user')
 
-    apiCall(question, category, difficulty,type)
+    apiCall(question, category, difficulty,type,user)
 }
 
-function apiCall(question, category, difficulty,type){
+function apiCall(question, category, difficulty,type,user){
     
     var xhr = new XMLHttpRequest()
-    var url = "https://opentdb.com/api.php?amount=" + question + "&category=" + category + "&difficulty=" + difficulty + "&type=" + type  
+    var url = "https://opentdb.com/api.php?amount=10" +"&category=" + category + "&difficulty=" + difficulty + "&type=" + type  
     xhr.open("GET", url)
     xhr.send()
     xhr.onload = function(){
         var data = JSON.parse(this.response).results
         // console.log(data)
         localStorage.setItem("questions", JSON.stringify(data)) 
+        localStorage.setItem("user", JSON.stringify(user))
         
         location.href = "quiz.html"
     }

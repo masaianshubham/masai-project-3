@@ -4,33 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@700&family=Lobster&family=Roboto:wght@500&family=Sora:wght@100&display=swap" rel="stylesheet">
+    <title>Masai Mind</title>
     <style>
         body {
-            background-image: url(https://media.istockphoto.com/photos/too-many-questions-picture-id487063216);
+            /* background-image: url(./resource/open\ trivia\ done.jpg); */
+            background-image: url(https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80);
+            font-family: 'Roboto', sans-serif;
+
         }
-        /* #cbody {
-            background-image: url(https://media.istockphoto.com/photos/too-many-questions-picture-id487063216);
-        } */
     </style>
 </head>
 <body>
     <div class="container my-5">
         <div class="row">
             <div class="col-8 offset-2">
-                <div class="card">
+                <div class="card"  > 
                     <div class="card-header text-center">
-                        <h1>Masai Mind</h1>
+                        <h1 class="text-primary">Masai <img src="./resource/brain.svg" class="img-fluid" style="height: 70px;" alt=""> Mind</h1>
                     </div>
-                    <div class="card-body bg-light" id="cbody">
+                    <div class="card-body bg-light" >
                         <form>
                             <div class="form-group">
-                                <label for="questions">Number of Questions</label>
-                                <input type="number" class="form-control" id="questions" min="1" max="50">
-                              </div>
+                                <input type="text" placeholder="Enter Your Name" class="form-control" name="user" required>
+                            </div>
+                            <!-- <div class="form-group">
+                                <label for="questions"><span class="font-weight-bold">Number of Questions</span></span></label>
+                                <input type="number" class="form-control" name="questions" min="1" max="50" placeholder="Enter No. of Question">
+                              </div> -->
                               <div class="form-group">
-                                <label for="category">Select Category</label>
-                                <select name="" id="category" class="form-control"> 
+                                <label for="category"><span class="font-weight-bold ">Select Category</span></label>
+                                <select  name="category" class="form-control"> 
                                     <option value="">Any category</option>
                                     <option value="9">General Knowledge</option>
                                     <option value="10">Entertainment: Books</option>
@@ -59,8 +63,8 @@
                                 </select>
                               </div>
                               <div class="form-group">
-                                    <label  for="Difficulty">Select Difficulty</label>
-                                    <select class="form-control" name="" id="difficulty">
+                                    <label  for="Difficulty"><span class="font-weight-bold">Select Difficulty</span></label>
+                                    <select class="form-control" name="difficulty">
                                         <option value="">Any Difficulty</option>
                                         <option value="easy">Easy</option>
                                         <option value="medium">Medium</option>
@@ -69,14 +73,14 @@
 
                               </div>
                               <div class="form-group">
-                                <label  for="type">Select Type</label>
-                                <select class="form-control" name="" id="difficulty">
+                                <label  for="type"><span class="font-weight-bold">Select Type</span></label>
+                                <select class="form-control" name="type">
                                     <option value="">All type</option>
-                                    <option value="medium">Multiple Choice</option>
+                                    <option value="multiple">Multiple Choice</option>
                                     <option value="boolean">True/False</option>
                                 </select>
 
-                                <input type="submit" name="" id="" value="Start Quiz" class="form-control btn btn-primary my-4">
+                                <input type="submit" name="" id="" value="Let's Play" class="form-control btn btn-primary my-4">
                           </div>
                         </form>
                     </div>
