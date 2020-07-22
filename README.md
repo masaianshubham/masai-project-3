@@ -22,4 +22,4 @@ result page
 ## Author:
 **Shubham Kumar**
 
-**All contributions are welcome. Just clone it and make improvement**
+**All contributions are welcome. Just fork it and make improvement**
