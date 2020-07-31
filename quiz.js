@@ -46,26 +46,26 @@ function appendCard(data,user1){
         que.innerHTML = "Que." + (i+1) + ". " + data[i].question
 
         var op1 = document.createElement("button")
-        op1.innerText = data[i].correct_answer
+        op1.innerHTML = data[i].correct_answer
         op1.setAttribute("class", "btn btn-primary mx-2 my-2")
         
         if(data[i].incorrect_answers.length==1){
             var op2 = document.createElement("button")
-            op2.innerText = data[i].incorrect_answers[0]
+            op2.innerHTML = data[i].incorrect_answers[0]
             op2.setAttribute("class", "btn btn-primary mx-2 my-2")
         }
 
         else{
             var op2 = document.createElement("button")
-            op2.innerText = data[i].incorrect_answers[0]
+            op2.innerHTML = data[i].incorrect_answers[0]
             op2.setAttribute("class", "btn btn-primary mx-2 my-2")
     
             var op3 = document.createElement("button")
-            op3.innerText = data[i].incorrect_answers[1]
+            op3.innerHTML = data[i].incorrect_answers[1]
             op3.setAttribute("class", "btn btn-primary mx-2 my-2")
     
             var op4 = document.createElement("button")
-            op4.innerText = data[i].incorrect_answers[2]
+            op4.innerHTML = data[i].incorrect_answers[2]
             op4.setAttribute("class", "btn btn-primary mx-2 my-2")
 
         }
